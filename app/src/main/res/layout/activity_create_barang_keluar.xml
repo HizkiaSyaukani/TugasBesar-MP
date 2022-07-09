@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".CreateBarangKeluar">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:text="Tambah Barang Keluar"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:text="ID Barang"
+        android:textSize="20dp"
+        android:id="@+id/idkeluar"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idkeluar"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:id="@+id/editidkeluar"
+        android:hint="Contoh A1234"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editidkeluar"
+        android:text="Jumlah Barang"
+        android:textSize="20dp"
+        android:id="@+id/jumlahkeluar"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumlahkeluar"
+        android:id="@+id/editjumlahkeluar"
+        android:drawableLeft="@drawable/ic_baseline_apps_24"
+        android:inputType="number"
+        android:hint="Masukkan Jumlah Barang"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editjumlahkeluar"
+        android:text="Tanggal Keluar"
+        android:textSize="20dp"
+        android:id="@+id/tanggalkeluar"
+        android:inputType="date"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggalkeluar"
+        android:id="@+id/edittanggalkeluar"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:inputType="date"
+        android:hint="0000-00-00"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittanggalkeluar"
+        android:text="Buat"
+        android:id="@+id/btnbuatkeluar"/>
+
+
+</RelativeLayout>

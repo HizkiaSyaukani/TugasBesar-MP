@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".UpdateDataBarang">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:text="Update Data Barang"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:text="ID Barang"
+        android:textSize="20dp"
+        android:id="@+id/idbarang"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idbarang"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:id="@+id/editid"
+        android:hint="Contoh A1234"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editid"
+        android:text="Nama Barang"
+        android:textSize="20dp"
+        android:id="@+id/nama"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:id="@+id/editnama"
+        android:drawableLeft="@drawable/ic_baseline_all_inbox_24"
+        android:inputType="text"
+        android:hint="Masukkan Nama Barang"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editnama"
+        android:text="Jenis Barang"
+        android:textSize="20dp"
+        android:id="@+id/jenis"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenis"
+        android:id="@+id/editjenis"
+        android:drawableLeft="@drawable/ic_baseline_article_24"
+        android:inputType="text"
+        android:hint="Masukkan Jenis Barang"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editjenis"
+        android:text="Ubah"
+        android:id="@+id/btnbuat"/>
+
+
+</RelativeLayout>

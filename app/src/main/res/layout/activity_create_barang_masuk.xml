@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".CreateBarangMasuk">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:text="Tambah Barang Masuk"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:text="ID Barang"
+        android:textSize="20dp"
+        android:id="@+id/idmasuk"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idmasuk"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:id="@+id/editidmasuk"
+        android:hint="Contoh A1234"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editidmasuk"
+        android:text="Jumlah Barang"
+        android:textSize="20dp"
+        android:id="@+id/jumlahmasuk"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumlahmasuk"
+        android:id="@+id/editjumlahmasuk"
+        android:drawableLeft="@drawable/ic_baseline_apps_24"
+        android:inputType="text"
+        android:hint="Masukkan Jumlah Barang"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editjumlahmasuk"
+        android:text="Tanggal Masuk"
+        android:textSize="20dp"
+        android:id="@+id/tanggalmasuk"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggalmasuk"
+        android:id="@+id/edittanggalmasuk"
+        android:drawableLeft="@drawable/ic_baseline_article_24"
+        android:inputType="date"
+        android:hint="0000-00-00"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittanggalmasuk"
+        android:text="Buat"
+        android:id="@+id/btnbuatmasuk"/>
+
+
+</RelativeLayout>
